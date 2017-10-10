@@ -1,0 +1,388 @@
+﻿
+
+.carousel-inner {
+    opacity: 0.8;
+}
+
+.navbar {
+    /*margin-bottom: 50px;*/
+    border-radius: 0;
+    background-color: #EFEFEF;
+    border-bottom-color: #EFEFEF;
+    border-top-color: #EFEFEF;
+    color: black;
+    /*height: 70px;*/
+    vertical-align: central;
+    width: auto;
+    -webkit-box-shadow: 0px 11px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 15px -1px rgba(0,0,0,0.75);
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    /*margin-left: 180px;*/
+}
+
+
+
+
+
+.nav > li {
+    position: relative;
+    display: block;
+    /*margin-top: 7px;*/
+}
+
+
+/*.nav > li:hover {
+            background-color: white;
+            color: red;
+        }*/
+
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        background-color: white;
+        color: black;
+        text-decoration: underline;
+    }
+
+.navbar-inverse .navbar-brand {
+    color: black;
+    margin-left: 0px;
+}
+
+
+.nav > li a:hover {
+    color: black;
+}
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+    margin-bottom: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #EFEFEF;
+    padding: 25px;
+    color: black;
+}
+
+@keyframes spinner {
+    100% {
+        transform: rotate(3600deg);
+    }
+}
+
+.loading-container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
+.spinner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/oSHLAzp.png') center center;
+    background-size: contain;
+    transition-origin: 50% 50%;
+    animation: spinner 3s infinite alternate ease-in-out;
+}
+
+.spinner-center {
+    display: inline-block;
+    position: absolute;
+    margin-left: -100px;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+    background-size: contain;
+    content: '';
+}
+
+.loading-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: 0.5em;
+}
+
+
+/**,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f0f0f0;
+}
+
+body {
+    color: #999999;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}*/
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/*.btn {
+    background-color: white;
+    border: 1px solid #cccccc;
+    color: #696969;
+    padding: 0.5rem;
+    text-transform: lowercase;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}*/
+
+.cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards__item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+    .card:hover .card__image {
+        -webkit-filter: contrast(100%);
+        filter: contrast(100%);
+    }
+
+.card__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    -webkit-filter: contrast(70%);
+    filter: contrast(70%);
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+    .card__image::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+    }
+
+@media (min-width: 40rem) {
+    .card__image::before {
+        padding-top: 66.6%;
+    }
+}
+
+.card__image--Dress {
+    background-image: url(https://i.pinimg.com/originals/2b/6b/a2/2b6ba230a394d3c33c3aff23007b27b2.jpg);
+}
+
+.card__image--Jacket {
+    background-image: url(https://dress-trends.com/wp-content/uploads/2015/11/2016-short-Leather-Jackets-For-Women.jpg);
+}
+
+.card__image--Skirt {
+    background-image: url(https://www.tillys.com/tillys/images/catalog/large/295657770.jpg);
+}
+
+.card__image--fence {
+    background-image: url(https://xo.lulus.com/images/product/large/2729182_518652.jpgs);
+}
+
+.card__title {
+    color: #696969;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card__text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+/*Home page bacground image css*/
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#background-carousel {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.carousel,
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    z-index: 0;
+}
+
+#content-wrapper {
+    position: absolute;
+    z-index: 1 !important;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.well {
+    opacity: 0.85;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+}
+/* End of home page carousal css*/
+/*body {
+    margin: 40px;
+}*/
+
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+
+    .btn-circle:hover {
+        opacity: 1.4;
+    }
+
+    .btn-circle.btn-lg {
+        width: 50px;
+        height: 50px;
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.33;
+        border-radius: 25px;
+        opacity: 0.7;
+    }
+
+        .btn-circle.btn-lg:hover {
+            opacity: 1.4;
+        }
+
+    .btn-circle.btn-xl:hover {
+        opacity: 1.4;
+    }
+
+    .btn-circle.btn-xl {
+        width: 70px;
+        height: 70px;
+        padding: 10px 16px;
+        font-size: 24px;
+        line-height: 1.33;
+        border-radius: 35px;
+        opacity: 0.7;
+    }
+
+body {
+    overflow-x: hidden !important;
+}
+
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}

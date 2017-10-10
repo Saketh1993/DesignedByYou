@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DesignedByYou.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="Styles/MyTheme.css" rel="stylesheet" />
+        <link href="../Styles/MyTheme.css" rel="stylesheet" />
+        <%--<style>
+            /* Remove the navbar's default rounded borders and increase the bottom margin */
+            .navbar {
+                /*margin-bottom: 50px;*/
+                border-radius: 0;
+                background-color: #EFEFEF;
+                border-bottom-color: #EFEFEF;
+                border-top-color: #EFEFEF;
+                color: black;
+                /*height: 70px;*/
+                vertical-align: central;
+            }
+
+            .navbar-nav {
+                margin-left: 180px;
+            }
+
+            .nav > li {
+                position: relative;
+                display: block;
+                /*margin-top: 7px;*/
+            }
+
+
+            /*.nav > li:hover {
+            background-color: white;
+            color: red;
+        }*/
+
+            .navbar-inverse .navbar-nav > li > a {
+                color: black;
+            }
+
+                .navbar-inverse .navbar-nav > li > a:hover {
+                    background-color: white;
+                    color: black;
+                    text-decoration: underline;
+                }
+
+            .navbar-inverse .navbar-brand {
+                color: black;
+                margin-left: 20px;
+            }
+
+
+            .nav > li a:hover {
+                color: black;
+            }
+
+            /* Remove the jumbotron's default bottom margin */
+            .jumbotron {
+                margin-bottom: 0;
+            }
+
+            /* Add a gray background color and some padding to the footer */
+            footer {
+                background-color: #EFEFEF;
+                padding: 25px;
+                color: black;
+            }
+        </style>--%>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="HomePage.aspx" s>DESIGNED BY YOU <i class="glyphicon glyphicon-scissors"></i></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+
+                            <%--<li><a href="HomePage.aspx">Home</a></li>
+                            <li><a href="#">Shirts</a></li>--%>
+                            <li><a href="SkirtHome.aspx" style="margin-left: 320px;">Skirts</a></li>
+                            <li><a href="JacketHome.aspx" style="margin-left: 10px;">Jackets</a></li>
+                            <li><a href="DressHome.aspx" style="margin-left: 10px;">Dress</a></li>
+                            <%--<li><a href="Admin.aspx" style="margin-left: 10px;">Purse</a></li>--%>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span>Your Account</a></li>
+                            <li><a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <%-- <div style="background: rgb(255,255,255); /* old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* ff3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* chrome10-25,safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* w3c, ie10+, ff16+, chrome26+, opera12+, safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* ie6-9 */">--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--  </div>--%>
+            <br />
+            <br />
+            <footer class="text-center navbar-fixed-bottom" style="margin-top: 20px;">
+                <%--navbar-fixed-bottom"--%>
+
+                <center>ALL RIGHTS RESERVED</center>
+
+                <form class="form-inline">
+
+                    <%-- <asp:TextBox type="email" class="form-control" size="50" runat="server" ID="txtEmail" ></asp:TextBox>
+                    <button type="button" class="btn btn-danger">Sign Up</button>--%>
+                </form>
+            </footer>
+            <%--<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>--%>
+        </div>
+    </form>
+</body>
+</html>
